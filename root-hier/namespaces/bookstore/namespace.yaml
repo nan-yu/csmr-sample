@@ -1,5 +1,5 @@
 # ROOT_REPO/namespaces/NAMESPACE/namespace.yaml
 apiVersion: v1
-kind: namespace
+kind: Namespace
 metadata:
   name: bookstore
