@@ -9,7 +9,7 @@ spec:
    repo: git@github.com:nan-yu/csmr-sample.git
    revision: HEAD
    branch: master
-   dir: "boostore"
+   dir: "bookstore"
    auth: ssh
    secretRef:
      name: ssh-key
