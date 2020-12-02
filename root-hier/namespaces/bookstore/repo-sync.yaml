@@ -8,7 +8,7 @@ spec:
   git:
    repo: git@github.com:nan-yu/csmr-sample.git
    revision: HEAD
-   branch: master
+   branch: nonexistent
    dir: "bookstore"
    auth: ssh
    secretRef:
