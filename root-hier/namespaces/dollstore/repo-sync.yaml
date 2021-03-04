@@ -1,0 +1,15 @@
+# ROOT_REPO/namespaces/NAMESPACE/repo-sync.yaml
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: dollstore
+spec:
+  git:
+    repo: git@github.com:nan-yu/csmr-sample.git
+    revision: HEAD
+    branch: master
+    dir: "dollstore"
+    auth: ssh
+    secretRef:
+      name: ssh-key

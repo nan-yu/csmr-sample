@@ -1,0 +1,15 @@
+# ROOT_REPO/namespaces/NAMESPACE/repo-sync.yaml
+apiVersion: configsync.gke.io/v1alpha1
+kind: RepoSync
+metadata:
+  name: repo-sync
+  namespace: hatstore
+spec:
+  git:
+    repo: git@github.com:nan-yu/csmr-sample.git
+    revision: HEAD
+    branch: master
+    dir: "hatstore"
+    auth: ssh
+    secretRef:
+      name: ssh-key
