@@ -5,6 +5,7 @@ metadata:
   name: repo-sync
   namespace: bookstore
 spec:
+  sourceFormat: unstructured
   git:
    repo: git@github.com:nan-yu/csmr-sample.git
    revision: HEAD
